@@ -1,0 +1,111 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container for content */
+.container {
+    width: 95%;
+    max-width: 600px;
+    margin-top: 40px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+textarea, input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: vertical;
+}
+
+button {
+    background: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #357ab8;
+}
+
+/* Notes list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f1f5fb;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li form button {
+    background: #e74c3c;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+ul li form button:hover {
+    background: #c0392b;
+}
+
+
+/* Responsive (mobile-friendly) */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    textarea, input, button {
+        font-size: 14px;
+    }
+}
